@@ -3,6 +3,7 @@ import ProductData from "./ProductData.mjs";
 
 const dataSource = new ProductData("tents");
 
+// cart fix
 function addProductToCart(product) {
   const cartItems = getLocalStorage("so-cart") || [];
   cartItems.push(product);
